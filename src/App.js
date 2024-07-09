@@ -1,4 +1,6 @@
-import Counter from "./counter/Counter";
+import Counter from "./programs/counter/Counter";
+import Parent from "./programs/contextHook/Parent";
+import TodoList from "./programs/todoList/TodoList";
 
 const App = () => {
     return (
@@ -12,7 +14,9 @@ const App = () => {
             `}
             </style>
             <span style={{"fontSize": "48px"}}>My programs</span>
-            <Counter />
+            {/* <Counter />
+            <Parent /> */}
+            <TodoList />
         </div>
     );
 };

@@ -1,13 +1,11 @@
-const Button = ({btnId, btnValue, btnCallBack}) => {
+const Button = ({ btnId, btnValue, btnCallBack }) => {
     return (
-        <div style={{"padding": "5px"}}>
-            <input 
-                type="button"
-                style={{"padding": "5px"}}
-                id={btnId} 
-                value={btnValue} 
-                onClick={btnCallBack} />
-        </div>
+        <input
+            type="button"
+            style={{ "padding": "5px", "margin": "5px" }}
+            id={btnId}
+            value={btnValue}
+            onClick={btnCallBack} />
     );
 };
 
