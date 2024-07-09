@@ -1,13 +1,18 @@
-import Button from "./comps/Button";
+import Counter from "./counter/Counter";
 
 const App = () => {
-    const btnValue = "First Button";
-    const btnId = "testBtn"
     return (
         <div>
-            <h1>This works!</h1>
-
-            <Button btnId={btnId} btnValue={btnValue} />
+            <style>{`
+                *{
+                    box-sizing: border-box;
+                    margin: 0;
+                    padding: 0;
+                }
+            `}
+            </style>
+            <span style={{"fontSize": "48px"}}>My programs</span>
+            <Counter />
         </div>
     );
 };

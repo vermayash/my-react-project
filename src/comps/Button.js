@@ -1,9 +1,12 @@
-const Button = ({btnId, btnValue}) => {
-    const doThis = () => console.log("Btn pressed");
-
+const Button = ({btnId, btnValue, btnCallBack}) => {
     return (
-        <div>
-            <input type="button" id={btnId} value={btnValue} onClick={doThis} />
+        <div style={{"padding": "5px"}}>
+            <input 
+                type="button"
+                style={{"padding": "5px"}}
+                id={btnId} 
+                value={btnValue} 
+                onClick={btnCallBack} />
         </div>
     );
 };
