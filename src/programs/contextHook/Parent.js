@@ -16,8 +16,8 @@ const Parent = () => {
     // },[]);
 
     return (
-        <div style={{"padding": "50px"}}>
-            <h3>Parent component</h3>
+        <div style={{"padding": "10px"}}>
+            <h1>Context hook implementation</h1>
             <Button btnId="increaseVal" btnValue="Increase value" btnCallBack={callBack} />
 
             <BooksContext.Provider value={val}>

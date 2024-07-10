@@ -6,7 +6,7 @@ const Child2 = () => {
 
     return (
         <div>
-            <h3>Context Child 2</h3>
+            <h3>Context in Child 2</h3>
             <p>Books count:  {booksValue}</p>
         </div>
     );
